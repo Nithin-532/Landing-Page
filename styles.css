@@ -8,13 +8,14 @@ body {
 
 .header {
   align-items: center;
-  padding: 10px 30px;
+  padding: 0px 30px;
   justify-content: space-between;
 }
 
 .logo {
   font-size: 24px;
   color: #F9FAF8;
+  font-weight: 800;
 }
 
 ul {
@@ -25,7 +26,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #E5E7EB;
 }
 
 .header, .hero, .footer {
@@ -40,17 +41,18 @@ main {
 }
 
 .hero {
-  padding: 40px;
-  gap: 20px;
+  padding: 13rem 5rem;
+  gap: 60px;
 }
 
 .section-hero-1 {
-  flex: 1;
+  width: 30rem;
   text-align: left;
 }
 
 .section-hero-2 {
   flex: 1;
+  margin-left: 20px;
   padding: 20px 10px;
   background-color: grey;
 }
@@ -62,7 +64,7 @@ main {
   color: #F9FAF8;
 }
 
-.hero-secondary-text,  .right-links {
+.hero-secondary-text{
   font-size: 18px;
   color: #E5E7EB;
 }
@@ -83,7 +85,7 @@ main {
 .information {
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 1.5rem 10rem 8rem;
 }
 
 .random-information {
@@ -99,9 +101,10 @@ main {
 }
 
 .card>img {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #3882F6;
+  width: 10em;
+  height: 10em;
+  border: 3px solid #3882F6;
+  border-radius: 8px;
 }
 
 .footer {
@@ -112,7 +115,7 @@ main {
 
 .quote {
   background-color: #E5E7EB;
-  padding: 40px;
+  padding: 9rem;
 }
 
 .emp {
@@ -128,16 +131,18 @@ main {
 }
 
 .action {
-  padding: 40px;
+  padding: 7rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .action-container {
+  width: 90%;
+  height: 100%;
   display: flex;
   background-color: #3882F6;
-  padding: 20px;
+  padding: 3em 1em;
   color: white;
   border-radius: 10px;
   align-items: center;
@@ -166,3 +171,46 @@ main {
   border-radius: 5px;
 }
 
+@media (max-width: 800px) {
+  .hero {
+    padding: 50px 60px;
+    gap: 20px;
+  }
+  
+  .section-hero-1 {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .section-hero-2 {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px 10px;
+    background-color: grey;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 30px;
+  }
+  
+  .random-information {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .card>img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+  }
+}
